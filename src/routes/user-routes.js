@@ -12,5 +12,6 @@ UserRouter.get("/users/:userId", userController.getUserDetails);
 UserRouter.post("/users/", userController.createUser);
 UserRouter.patch("/users/:userId", userController.updateUser);
 UserRouter.delete("/users/:userId", userController.deleteUser);
+UserRouter.post("/sign-up", authMiddleware, userController.signUp);
 
 module.exports = UserRouter;
