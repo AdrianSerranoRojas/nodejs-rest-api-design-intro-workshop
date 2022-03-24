@@ -21,5 +21,6 @@ app.use(
 );
 
 app.use(userRouter);
+app.use(bookRouter);
 
 module.exports = app;
